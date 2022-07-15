@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+    <title>CheapTrix399</title>
+</head>
+<body>
+    <button id="mode" class="float-right" onclick="mode()">Light Mode</button>
+    <div class="md-flex md-justify-between md-w-4/5 m-auto align-center">
+        <h3 class="text-4xl">CheapTrix399</h3>
+        <div class="md-flex justify-between">
+            <div class="button md-w-auto" onclick="window.open('https\://youtube.com/channel/UCYPhUChwaaAgxJfTxSdV8mg','YT');"><h4 class="m-auto">Youtube</h4></div>
+            <div class="button md-w-auto" onclick="window.open('https\://twitch.tv/cheaptrix399','TTV');"><h4 class="m-auto">Twitch</h4></div>
+            <div class="button md-w-auto" onclick="window.open('https\://github.com/CheapTrix399','Github');"><h4 class="m-auto">Github</h4></div>
+            <div class="button md-w-auto" onclick="window.open('https\://discord.gg/SMMjP8ze3X','Discord');"><h4 class="m-auto">Discord</h4></div>
+            <div class="button md-w-auto" onclick="window.open('https\://twitter.com/trix399','Twitter');"><h4 class="m-auto">Twitter</h4></div>
+            <div class="button md-w-auto" onclick="window.open('https\://instagram.com/cheaptrix399','Insta');"><h4 class="m-auto">Instagram</h4></div>
+        </div>
+    </div>
+    <div class="md-flex md-w-4/5 md-justify-around m-auto align-center">
+        <img src="assets/cheap.jpg" width="200px;">
+        <div class="md-w-2/3 border-2 p-4">
+            <h4>Gamer, Hobby Streamer, Programmer and everything in between :)</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="md-w-4/5 m-auto md-justify-around md-flex">
+        <div class="md-w-1/2 m-4">
+            <h3 class="text-2xl">Games I usually play</h3>
+            <h4>Mostly with viewers :)</h4>
+            <ul class="text-xl">
+                <li>Valorant / CSGO</li>
+                <li>Dauntless</li>
+                <li>Deep Rock Galactic</li>
+            </ul>
+        </div>
+        <div class="md-w-1/2 m-4">
+            <h3 class="text-2xl">Projects</h3>
+            <div class="text-xl">
+                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.youtube.com/playlist?list=PLt_5dbuPhz4Yqve_YeriXF-mephbmcwa8','YT');">Tutorials</div>
+                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.youtube.com/playlist?list=PLt_5dbuPhz4Zc9NOHbQcVBqHu-HhMrcz2','YT');">Dauntless Trials</div>
+                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.youtube.com/playlist?list=PLt_5dbuPhz4bMYODiu_hU4FEQz1Fxga1l','YT');">Dauntless Hescas</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const body = document.getElementsByTagName("body")[0];
+        const mode_button = document.getElementById("mode");
+        const button = document.getElementsByClassName("button");
+        const button_length = button.length;
+        body.style.color = "white";
+        body.style.backgroundColor = "grey";
+        mode_button.innerHTML = "Light Mode";
+        function mode(){
+            console.log(body.style);
+            if(body.style.color == "black"){
+                body.style.color = "white";
+                body.style.backgroundColor = "grey";
+                mode_button.innerHTML = "Light Mode";
+                for(var i = 0; i < button_length; i++){
+                    button.item(i).style.backgroundColor = "#666666";
+                }
+            }
+            else if(body.style.color == "white"){
+                body.style.color = "black";
+                body.style.backgroundColor = "white";
+                mode_button.innerHTML = "Dark Mode";
+                for(var i = 0; i < button_length; i++){
+                    button.item(i).style.backgroundColor = "#DDDDDD";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
