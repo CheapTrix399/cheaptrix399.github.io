@@ -1,6 +1,7 @@
 body {
    background-color: grey;
    color: white;
+   font-family: "Roboto";
 }
 hr {
     color: #BBBBBB;
@@ -88,5 +89,5 @@ hr {
 }
 a {
     text-decoration: none;
-    color: #444444;
+    color: gray;
 }

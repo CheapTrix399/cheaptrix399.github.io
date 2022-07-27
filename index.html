@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="mycss.css">
     <link rel="shortcut icon" href="assets/cheap.jpg" type="image/x-icon">
     <title>CheapTrix399</title>
@@ -30,7 +31,7 @@
     <hr>
     <div class="md-w-4/5 m-auto md-justify-around md-flex">
         <div class="md-w-1/2 m-4 border-2 text-center">
-            <a href="ThoughtLog"><h2 style="color: white;">ThoughtLog</h2></a>
+            <a href="ThoughtLog"><h2>ThoughtLog</h2></a>
         </div>
     </div>
     <hr>
@@ -73,13 +74,13 @@
         const button = document.getElementsByClassName("button");
         const button_length = button.length;
         body.style.color = "white";
-        body.style.backgroundColor = "grey";
+        body.style.backgroundColor = "#2C2F33";
         mode_button.innerHTML = "Light Mode";
         function mode(){
             console.log(body.style);
             if(body.style.color == "black"){
                 body.style.color = "white";
-                body.style.backgroundColor = "grey";
+                body.style.backgroundColor = "#2C2F33";
                 mode_button.innerHTML = "Light Mode";
                 for(var i = 0; i < button_length; i++){
                     button.item(i).style.backgroundColor = "#666666";
