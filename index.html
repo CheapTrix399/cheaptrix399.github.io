@@ -2,78 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="mycss.css">
-    <link rel="shortcut icon" href="assets/cheap.jpg" type="image/x-icon">
+    <link rel="icon" href="assets/cheap.jpg">
     <title>CheapTrix399</title>
 </head>
-<body>
-    <button id="mode" class="float-right" onclick="mode()">Light Mode</button>
-    <div class="md-flex md-justify-between md-w-4/5 m-auto align-center">
-        <h3 class="text-4xl">CheapTrix399</h3>
-        <div class="flex justify-between">
-            <div class="md-w-auto m-4" onclick="window.open('https\://youtube.com/channel/UCYPhUChwaaAgxJfTxSdV8mg','YT');"><img src="assets/yt.webp" height="50px"/></div>
-            <div class="md-w-auto m-4" onclick="window.open('https\://twitch.tv/cheaptrix399','TTV');"><img src="assets/twitch.webp" height="50px"/></div>
-            <div class="md-w-auto m-4" onclick="window.open('https\://github.com/CheapTrix399','Github');"><img src="assets/git.png" height="50px"/></div>
-            <div class="md-w-auto m-4" onclick="window.open('https\://discord.gg/SMMjP8ze3X','Discord');"><img src="assets/discord.png" height="50px"/></div>
+<body class="md-w-80">
+    <div class="flex align-items-center justify-bw md-mt-5">
+        <h1>CheapTrix399</h1>
+        <div>
+            <a href="https://discord.gg/SMMjP8ze3X" target="_blank"><img src="assets/discord.png" height="50px"></a>
+            <a href="https://youtube.com/@CheapTrix399" target="_blank"><img src="assets/yt.webp" height="50px"></a>
+            <a href="https://twitch.tv/cheaptrix399" target="_blank"><img src="assets/twitch.webp" height="50px"></a>
+            <a href="https://github.com/cheaptrix399" target="_blank"><img src="assets/git.png" height="50px"></a>
         </div>
     </div>
-    <div class="md-flex md-w-4/5 md-justify-around m-auto align-center">
-        <img src="assets/cheap.jpg" width="200px;">
-        <div class="md-w-2/3 border-2 p-4 text-center">
-            <h4>Gamer, Hobby Streamer, Programmer and everything in between :)</h4>
+    <div class="md-flex md-justify-bw align-items-center">
+        <div class="md-w-50 sm-w-50 sm-m-auto">
+            <img src="assets/cheap.jpg" height="200px">
+        </div>
+        <div class="md-w-50 fs-large">
+            <h4>
+                I'm a gamer / programmer who mainly plays RPGs and Shooters. Occasionally create content for fun
+            </h4>
         </div>
     </div>
-    <hr>
-    <div class="md-w-4/5 m-auto md-justify-around md-flex">
-        <div class="md-w-1/2 m-4">
-            <h3 class="text-2xl">Mini-Projects</h3>
-            <div class="text-xl">
-                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.github.com/cheaptrix399/DSA-Python','YT');">DSA - Python</div>
-                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.github.com/cheaptrix399/AdventOfCode','YT');">Advent Of Code</div>
-                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.github.com/cheaptrix399/LeetCode','YT');">LeetCode</div>
+    <div class="md-flex md-justify-bw">
+        <div class="md-w-50">
+            <h2>My Game Records: </h2>
+            <div class="ml-5 fs-large">
+                <li><a href="https://seytaek.com/seasons/active/c708dc14-a961-4306-8fa9-27803a0b859d" target="_blank">Trackmania</a></li>
+                <li><a href="https://tracker.gg/valorant/profile/riot/CheapTrix399%237442/overview" target="_blank">Valorant</a></li>
+                <li><a href="https://leetify.com/app/profile/76561198854962774" target="_blank">Counter-Strike</a></li>
+                <li><a href="https://wiseoldman.net/players/ncm18" target="_blank">OldSchool Runescape</a></li>
             </div>
         </div>
-        <div class="md-w-1/2 m-4">
-            <h3 class="text-2xl">Playlists</h3>
-            <div class="text-xl">
-                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.youtube.com/playlist?list=PLt_5dbuPhz4Yqve_YeriXF-mephbmcwa8','YT');">Tutorials</div>
-                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.youtube.com/playlist?list=PLt_5dbuPhz4Zc9NOHbQcVBqHu-HhMrcz2','YT');">Dauntless Trials</div>
-                <div class="pointer md-w-2/3 m-4 border-2 text-center" onclick="window.open('https\://www.youtube.com/playlist?list=PLt_5dbuPhz4bMYODiu_hU4FEQz1Fxga1l','YT');">Dauntless Hescas</div>
+        <div class="md-w-50">
+            <h2>My Projects: </h2>
+            <div class="ml-5 fs-large">
+                <li><a href="https://github.com/CheapTrix399/AdventOfCode" target="_blank">AdventOfCode</a></li>
             </div>
         </div>
     </div>
-    <br>
-    <hr>
-    <script>
-        const body = document.getElementsByTagName("body")[0];
-        const mode_button = document.getElementById("mode");
-        const button = document.getElementsByClassName("button");
-        const button_length = button.length;
-        body.style.color = "white";
-        body.style.backgroundColor = "#2C2F33";
-        mode_button.innerHTML = "Light Mode";
-        function mode(){
-            console.log(body.style);
-            if(body.style.color == "black"){
-                body.style.color = "white";
-                body.style.backgroundColor = "#2C2F33";
-                mode_button.innerHTML = "Light Mode";
-                for(var i = 0; i < button_length; i++){
-                    button.item(i).style.backgroundColor = "#666666";
-                }
-            }
-            else if(body.style.color == "white"){
-                body.style.color = "black";
-                body.style.backgroundColor = "white";
-                mode_button.innerHTML = "Dark Mode";
-                for(var i = 0; i < button_length; i++){
-                    button.item(i).style.backgroundColor = "#DDDDDD";
-                }
-            }
-        }
-    </script>
+    <div class="md-flex md-justify-bw">
+        <div class="md-w-50">
+            <h2>Underrated Games / Mods you should try: </h2>
+            <div class="ml-5 fs-large">
+                <li><a href="https://multitheftauto.com/" target="_blank">MTA SA</a></li>
+                <li><a href="https://store.steampowered.com/app/236110/Dungeon_Defenders_II/" target="_blank">Dungeon Defenders 2</a></li>
+                <li><a href="https://playdauntless.com/" target="_blank">Dauntless</a></li>
+                <li><a href="https://superhexagon.com/" target="_blank">Super Hexagon</a></li>
+                <li><a href="https://store.steampowered.com/app/1175140/Vecter/" target="_blank">Vecter</a></li>
+            </div>    
+        </div>
+        <div class="md-w-50">
+            <h2>Articles: </h2>
+            <div class="ml-5 fs-large">
+                <li><a href="#" target="_blank">WIP</a></li>
+            </div> 
+        </div>
+    </div>
 </body>
 </html>
