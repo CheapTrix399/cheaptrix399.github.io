@@ -41,6 +41,9 @@ a:visited {
 }
 
 @media (min-width: 800px){
+    .md-w-33 {
+        width: 33.33%;
+    }
     .md-w-50 {
         width: 50%;
     }
